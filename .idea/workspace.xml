@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0c48aa-5643-40e5-8c49-e47f46f37c04" name="Changes" comment="hodne">
-      <change afterPath="$PROJECT_DIR$/components/restaurant/Ad.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boilerplate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/error.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/404.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Nav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/restaurant/Ad.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/restaurant/Ad.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/restaurant/Row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/restaurant/Row.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/custom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/custom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/restaurants/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/restaurants/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/restaurants/404.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/restaurants/[name].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/restaurants/[name].vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/restaurants/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/restaurants/index.vue" afterDir="false" />
     </list>
@@ -35,7 +41,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2DnnwnyiqUvbbHIugu1xCPJKGaf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -46,25 +52,26 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;164820&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pluhy/Documents/Nuxt/Top-Restaurant-App/02-Top-Restaurants&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/pluhy/Documents/Nuxt/Top-Restaurant-App/02-Top-Restaurants/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;vuejs.nuxt.types-notification-shown&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Project.color": "164820",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/pluhy/Documents/Nuxt/Top-Restaurant-App/02-Top-Restaurants",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/pluhy/Documents/Nuxt/Top-Restaurant-App/02-Top-Restaurants/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true",
+    "vuejs.nuxt.types-notification-shown": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +83,7 @@
       <workItem from="1661343958406" duration="6755000" />
       <workItem from="1661441957844" duration="3933000" />
       <workItem from="1661807354130" duration="48000" />
-      <workItem from="1661846375439" duration="1661000" />
+      <workItem from="1661846375439" duration="7434000" />
     </task>
     <task id="LOCAL-00001" summary="Znova">
       <created>1661344272275</created>
@@ -131,6 +138,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Znova" />
     <MESSAGE value="Restaurant data etc" />
     <MESSAGE value="hodne" />

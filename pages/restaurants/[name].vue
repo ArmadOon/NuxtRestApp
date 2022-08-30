@@ -1,38 +1,61 @@
 <script setup lang="ts">
 import restaurants from "@/data.json";
-import Nav from "~/components/Nav.vue";
+
 const route = useRoute();
 const name = route.params.name;
 
-const restaurant = restaurants.find(r => r.name == name)
+const restaurant = restaurants.find((r) => r.name === name);
+
+useMeta({
+  title: restaurant ? name : "404 - Restaurant Not Found",
+  meta: [
+    {
+      name: "viewport",
+      content: "width=device-width",
+    },
+  ],
+});
 </script>
 
-
-
 <template>
+  <div>
+    <NuxtLayout name="custom" v-if="restaurant">
+      <div class="restaurant-container">
+        <div class="image-container">
+          <img :src="restaurant.imageUrl" alt="" />
+        </div>
+        <div class="info-container">
+          <h1>{{ restaurant.name }}</h1>
+          <div class="stats-container">
+            <h5>Revenue (in billions)</h5>
+            <p>${{ restaurant.revenue }}</p>
+          </div>
+          <div class="stats-container">
+            <h5>Number of Stores</h5>
+            <p>{{ restaurant.numberOfStores }}</p>
+          </div>
+          <p class="content">{{ restaurant.content }}</p>
+        </div>
+      </div>
+    </NuxtLayout>
 
-  <div class=".container">
-    <div class="restaurant-container">
-      <div class="image-container">
-        <img :src="restaurant.imageUrl" alt="" />
-      </div>
-      <div class="info-container">
-        <h1>{{ restaurant.name }}</h1>
-        <div class="stats-container">
-          <h5>Revenue (in billions)</h5>
-          <p>{{ restaurant.revenue}}</p>
-        </div>
-        <div class="stats-container">
-          <h5>Number of Stores</h5>
-          <p>{{ restaurant.numberOfStores }}</p>
-        </div>
-        <p class="content">{{ restaurant.content }}</p>
-      </div>
+    <div class="restaurant-not-found" v-else>
+      <NuxtLayout name="error">
+        <template #header>
+          <h1>Restaurant not found</h1>
+        </template>
+        <template #redirectEl>
+          <button
+            class="btn btn-primary btn-lg"
+            @click="$router.push('/restaurants')"
+          >
+            Go Back
+          </button>
+        </template>
+      </NuxtLayout>
     </div>
-    <RestaurantAd />
   </div>
 </template>
-
 
 <style scoped>
 .restaurant-container {
@@ -81,5 +104,8 @@ const restaurant = restaurants.find(r => r.name == name)
   font-size: 1.5rem;
   margin-top: 4rem;
 }
-</style>
 
+img {
+  width: 10rem;
+}
+</style>
